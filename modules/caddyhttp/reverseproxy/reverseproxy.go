@@ -35,12 +35,12 @@ import (
 	"go.uber.org/zap"
 	"golang.org/x/net/http/httpguts"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddyevents"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/headers"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/rewrite"
+	"github.com/InnovacationSRL/caddy/v2"
+	"github.com/InnovacationSRL/caddy/v2/caddyconfig/caddyfile"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyevents"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyhttp"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyhttp/headers"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyhttp/rewrite"
 )
 
 func init() {
@@ -982,7 +982,7 @@ func (h *Handler) finalizeResponse(
 		// there's nothing an error handler can do to recover at this point;
 		// we'll just log the error and abort the stream here and panic just as
 		// the standard lib's proxy to propagate the stream error.
-		// see issue https://github.com/caddyserver/caddy/issues/5951
+		// see issue https://github.com/InnovacationSRL/caddy/issues/5951
 		logger.Warn("aborting with incomplete response", zap.Error(err))
 		// no extra logging from stdlib
 		panic(http.ErrAbortHandler)

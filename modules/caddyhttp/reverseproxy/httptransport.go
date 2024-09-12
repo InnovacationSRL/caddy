@@ -35,9 +35,9 @@ import (
 	"go.uber.org/zap"
 	"golang.org/x/net/http2"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
+	"github.com/InnovacationSRL/caddy/v2"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyhttp"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddytls"
 )
 
 func init() {

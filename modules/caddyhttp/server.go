@@ -35,9 +35,9 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddyevents"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
+	"github.com/InnovacationSRL/caddy/v2"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyevents"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddytls"
 )
 
 // Server describes an HTTP server.
@@ -582,7 +582,7 @@ func (s *Server) serveHTTP3(addr caddy.NetworkAddress, tlsCfg *tls.Config) error
 		s.h3server = &http3.Server{
 			// Currently when closing a http3.Server, only listeners are closed. But caddy reuses these listeners
 			// if possible, requests are still read and handled by the old handler. Close these connections manually.
-			// see issue: https://github.com/caddyserver/caddy/issues/6195
+			// see issue: https://github.com/InnovacationSRL/caddy/issues/6195
 			// Will interrupt ongoing requests.
 			// TODO: remove the handler wrap after http3.Server.CloseGracefully is implemented, see App.Stop
 			Handler: http.HandlerFunc(func(writer http.ResponseWriter, request *http.Request) {

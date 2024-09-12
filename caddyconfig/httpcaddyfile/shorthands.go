@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
+	"github.com/InnovacationSRL/caddy/v2/caddyconfig/caddyfile"
 )
 
 type ComplexShorthandReplacer struct {

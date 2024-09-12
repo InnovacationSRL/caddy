@@ -23,7 +23,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
+	"github.com/InnovacationSRL/caddy/v2/caddyconfig/caddyfile"
 )
 
 func TestFileCreationMode(t *testing.T) {

@@ -29,9 +29,9 @@ import (
 	"github.com/mholt/acmez/v2"
 	"go.uber.org/zap"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
+	"github.com/InnovacationSRL/caddy/v2"
+	"github.com/InnovacationSRL/caddy/v2/caddyconfig"
+	"github.com/InnovacationSRL/caddy/v2/caddyconfig/caddyfile"
 )
 
 func init() {
@@ -848,7 +848,7 @@ func setDefaultTLSParams(cfg *tls.Config) {
 		// but that would disable the post-quantum key agreement X25519Kyber768
 		// supported in Go 1.23, for which the CurveID is not exported.
 		// Instead, we'll set CurvePreferences to nil, which will enable PQC.
-		// See https://github.com/caddyserver/caddy/issues/6540
+		// See https://github.com/InnovacationSRL/caddy/issues/6540
 		cfg.CurvePreferences = nil
 	}
 

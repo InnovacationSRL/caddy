@@ -41,8 +41,8 @@ import (
 	gmhtml "github.com/yuin/goldmark/renderer/html"
 	"go.uber.org/zap"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
+	"github.com/InnovacationSRL/caddy/v2"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyhttp"
 )
 
 // TemplateContext is the TemplateContext with which HTTP templates are executed.
@@ -193,9 +193,9 @@ func (c TemplateContext) funcHTTPInclude(uri string) (string, error) {
 		return "", err
 	}
 	virtReq.Host = c.Req.Host
-	virtReq.RemoteAddr = "127.0.0.1:10000" // https://github.com/caddyserver/caddy/issues/5835
+	virtReq.RemoteAddr = "127.0.0.1:10000" // https://github.com/InnovacationSRL/caddy/issues/5835
 	virtReq.Header = c.Req.Header.Clone()
-	virtReq.Header.Set("Accept-Encoding", "identity") // https://github.com/caddyserver/caddy/issues/4352
+	virtReq.Header.Set("Accept-Encoding", "identity") // https://github.com/InnovacationSRL/caddy/issues/4352
 	virtReq.Trailer = c.Req.Trailer.Clone()
 	virtReq.Header.Set(recursionPreventionHeader, strconv.Itoa(recursionCount))
 

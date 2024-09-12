@@ -26,9 +26,9 @@ import (
 
 	"github.com/caddyserver/certmagic"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
+	"github.com/InnovacationSRL/caddy/v2"
+	"github.com/InnovacationSRL/caddy/v2/caddyconfig/caddyfile"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyhttp"
 )
 
 // mapAddressToServerBlocks returns a map of listener address to list of server
@@ -398,7 +398,7 @@ func (a Address) Normalize() Address {
 
 // lowerExceptPlaceholders lowercases s except within
 // placeholders (substrings in non-escaped '{ }' spans).
-// See https://github.com/caddyserver/caddy/issues/3264
+// See https://github.com/InnovacationSRL/caddy/issues/3264
 func lowerExceptPlaceholders(s string) string {
 	var sb strings.Builder
 	var escaped, inPlaceholder bool

@@ -26,7 +26,7 @@ import (
 
 	"golang.org/x/sync/singleflight"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/InnovacationSRL/caddy/v2"
 )
 
 func init() {

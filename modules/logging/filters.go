@@ -27,9 +27,9 @@ import (
 
 	"go.uber.org/zap/zapcore"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
+	"github.com/InnovacationSRL/caddy/v2"
+	"github.com/InnovacationSRL/caddy/v2/caddyconfig/caddyfile"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyhttp"
 )
 
 func init() {

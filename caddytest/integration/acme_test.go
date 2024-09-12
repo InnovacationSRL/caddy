@@ -11,8 +11,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddytest"
+	"github.com/InnovacationSRL/caddy/v2"
+	"github.com/InnovacationSRL/caddy/v2/caddytest"
 	"github.com/mholt/acmez/v2"
 	"github.com/mholt/acmez/v2/acme"
 	smallstepacme "github.com/smallstep/certificates/acme"

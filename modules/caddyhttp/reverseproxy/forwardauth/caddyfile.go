@@ -19,13 +19,13 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/caddy/v2/caddyconfig/httpcaddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/headers"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/rewrite"
+	"github.com/InnovacationSRL/caddy/v2"
+	"github.com/InnovacationSRL/caddy/v2/caddyconfig"
+	"github.com/InnovacationSRL/caddy/v2/caddyconfig/httpcaddyfile"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyhttp"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyhttp/headers"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyhttp/reverseproxy"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddyhttp/rewrite"
 )
 
 func init() {

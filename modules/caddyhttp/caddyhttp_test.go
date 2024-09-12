@@ -28,7 +28,7 @@ func TestSanitizedPathJoin(t *testing.T) {
 		},
 		{
 			// fileserver.MatchFile passes an inputPath of "//" for some try_files values.
-			// See https://github.com/caddyserver/caddy/issues/6352
+			// See https://github.com/InnovacationSRL/caddy/issues/6352
 			inputPath: "//",
 			expect:    filepath.FromSlash("./"),
 		},

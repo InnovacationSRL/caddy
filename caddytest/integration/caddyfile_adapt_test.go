@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2/caddytest"
+	"github.com/InnovacationSRL/caddy/v2/caddytest"
 
-	_ "github.com/caddyserver/caddy/v2/internal/testmocks"
+	_ "github.com/InnovacationSRL/caddy/v2/internal/testmocks"
 )
 
 func TestCaddyfileAdaptToJSON(t *testing.T) {

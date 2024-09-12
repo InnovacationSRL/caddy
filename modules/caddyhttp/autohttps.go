@@ -23,8 +23,8 @@ import (
 	"github.com/caddyserver/certmagic"
 	"go.uber.org/zap"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
+	"github.com/InnovacationSRL/caddy/v2"
+	"github.com/InnovacationSRL/caddy/v2/modules/caddytls"
 )
 
 // AutoHTTPSConfig is used to disable automatic HTTPS
@@ -93,7 +93,7 @@ func (app *App) automaticHTTPSPhase1(ctx caddy.Context, repl *caddy.Replacer) er
 	// this maps domain names for automatic HTTP->HTTPS
 	// redirects to their destination server addresses
 	// (there might be more than 1 if bind is used; see
-	// https://github.com/caddyserver/caddy/issues/3443)
+	// https://github.com/InnovacationSRL/caddy/issues/3443)
 	redirDomains := make(map[string][]caddy.NetworkAddress)
 
 	// the log configuration for an HTTPS enabled server
@@ -399,7 +399,7 @@ redirServersLoop:
 			// find the index of the route after the last route with a host
 			// matcher, then insert the redirects there, but before any
 			// user-defined catch-all routes
-			// see https://github.com/caddyserver/caddy/issues/3212
+			// see https://github.com/InnovacationSRL/caddy/issues/3212
 			insertIndex := srv.findLastRouteWithHostMatcher()
 
 			// add the redirects at the insert index, except for when

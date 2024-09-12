@@ -73,7 +73,7 @@ var defaultCipherSuitesWithoutAESNI = []uint16{
 // getOptimalDefaultCipherSuites returns an appropriate cipher
 // suite to use depending on the hardware support for AES.
 //
-// See https://github.com/caddyserver/caddy/issues/1674
+// See https://github.com/InnovacationSRL/caddy/issues/1674
 func getOptimalDefaultCipherSuites() []uint16 {
 	if cpuid.CPU.Supports(cpuid.AESNI) {
 		return defaultCipherSuitesWithAESNI
@@ -111,7 +111,7 @@ var supportedCertKeyTypes = map[string]certmagic.KeyType{
 //
 // Temporily we ignore these default, to take advantage of X25519Kyber768
 // in Go's defaults (X25519Kyber768, X25519, P-256, P-384, P-521), which
-// isn't exported. See https://github.com/caddyserver/caddy/issues/6540
+// isn't exported. See https://github.com/InnovacationSRL/caddy/issues/6540
 // nolint:unused
 var defaultCurves = []tls.CurveID{
 	tls.X25519,

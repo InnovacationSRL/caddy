@@ -34,7 +34,7 @@ import (
 	"go.uber.org/zap"
 	"golang.org/x/time/rate"
 
-	"github.com/caddyserver/caddy/v2/internal"
+	"github.com/InnovacationSRL/caddy/v2/internal"
 )
 
 // NetworkAddress represents one or more network addresses.
@@ -473,7 +473,7 @@ type contextAndCancelFunc struct {
 }
 
 // sharedQUICState manages GetConfigForClient
-// see issue: https://github.com/caddyserver/caddy/pull/4849
+// see issue: https://github.com/InnovacationSRL/caddy/pull/4849
 type sharedQUICState struct {
 	rmu           sync.RWMutex
 	tlsConfs      map[*tls.Config]contextAndCancelFunc

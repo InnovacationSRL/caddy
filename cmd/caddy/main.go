@@ -1,6 +1,6 @@
 // The below line is required to enable post-quantum key agreement in Go 1.23
 // by default without insisting on setting a minimum version of 1.23 in go.mod.
-// See https://github.com/caddyserver/caddy/issues/6540#issuecomment-2313094905
+// See https://github.com/InnovacationSRL/caddy/issues/6540#issuecomment-2313094905
 //go:debug tlskyber=1
 
 // Copyright 2015 Matthew Holt and The Caddy Authors
@@ -34,10 +34,10 @@
 package main
 
 import (
-	caddycmd "github.com/caddyserver/caddy/v2/cmd"
+	caddycmd "github.com/InnovacationSRL/caddy/v2/cmd"
 
 	// plug in Caddy modules here
-	_ "github.com/caddyserver/caddy/v2/modules/standard"
+	_ "github.com/InnovacationSRL/caddy/v2/modules/standard"
 )
 
 func main() {
